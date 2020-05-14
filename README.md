@@ -7,10 +7,10 @@ Gap Minder allows anyone to use their voice to generate station announcements th
 
 Gap Minder includes example audio files which can be used to generate announcements upon installation. Audio announcements are created via the command line interface using the following structure.
 
-![demo](./assets/examples/demo.gif)
+![demo](./examples/demo.gif)
 
 ```bash
-$ python src/gapminder.py <platform> <station>
+$ python gapminder.py <platform> <station>
 ```
 
 **Supported Platforms**
@@ -39,7 +39,7 @@ The following steps outline the process to record and generate custom announceme
 
 #### Record Audio
 
-1. Find a Quite Location
+1. Find a Quiet Location
 
    Gap Minder relies on the silence between speech to extract the audio segments. Reducing or eliminating background noise is essential.
 
@@ -82,8 +82,7 @@ The following steps outline the process to record and generate custom announceme
 The `segmenter.py` script is used to separate the audio recordings into individual station, platform, and message audio segments.
 
 ```bash
-$ python segmenter.py [-t THRESHOLD] [-l MIN_LENGTH]
-                    <category> <file>
+$ python segmenter.py [-t THRESHOLD] [-l MIN_LENGTH] <category> <file>
 ```
 
 **Supported Categories**

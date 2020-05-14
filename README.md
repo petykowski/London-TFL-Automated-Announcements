@@ -33,11 +33,11 @@ $ python gapminder.py <platform> <station>
 * `turnham-green`
 * `west-kensington`
 
-### Custom Announcement Audio Segments
+## Custom Announcement Audio Segments
 
 The following steps outline the process to record and generate custom announcements using your own voice.
 
-#### Record Audio
+### Record Audio
 
 1. Find a Quiet Location
 
@@ -77,7 +77,7 @@ The following steps outline the process to record and generate custom announceme
 
    Output each of the 3 recordings in a `.wav` format to any location on your computer. Make note of this location as it will be needed later when processing the audio files.
 
-#### Process Audio
+### Process Audio
 
 The `segmenter.py` script is used to separate the audio recordings into individual station, platform, and message audio segments.
 

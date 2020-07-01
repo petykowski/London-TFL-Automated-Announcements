@@ -10,7 +10,7 @@ Gap Minder includes example audio files which can be used to generate announceme
 ![demo](./examples/demo.gif)
 
 ```bash
-$ python gapminder.py <platform> <station>
+python gapminder.py <platform> <station>
 ```
 
 **Supported Platforms**
@@ -22,16 +22,7 @@ $ python gapminder.py <platform> <station>
 
 **Supported Stations**
 
-* `acton-town`
-* `barons-court`
-* `ealing-broadway`
-* `ealing-common`
-* `earls-court`
-* `hammersmith`
-* `ravenscourt-park`
-* `stamford-brook`
-* `turnham-green`
-* `west-kensington`
+* District Line
 
 ## Custom Announcement Audio Segments
 
@@ -82,7 +73,7 @@ The following steps outline the process to record and generate custom announceme
 The `segmenter.py` script is used to separate the audio recordings into individual station, platform, and message audio segments.
 
 ```bash
-$ python segmenter.py [-t THRESHOLD] [-l MIN_LENGTH] <category> <file>
+python segmenter.py [-t THRESHOLD] [-l MIN_LENGTH] <category> <file>
 ```
 
 **Supported Categories**
@@ -90,4 +81,3 @@ $ python segmenter.py [-t THRESHOLD] [-l MIN_LENGTH] <category> <file>
 * `STATIONS`
 * `PLATFORMS`
 * `MESSAGES`
-
